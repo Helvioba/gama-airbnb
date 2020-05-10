@@ -56,8 +56,7 @@ function fnc_newCard(p_Values) {
     cardTitle.innerHTML = p_Values.name;
     let cardPrice = document.createElement('h4');
     cardPrice.setAttribute('class', 'cls_CardPrice');
-    cardPrice.innerHTML = "R$ ";
-    cardPrice.innerHTML += p_Values.price;
+    cardPrice.innerHTML = `R$ ${p_Values.price},00 / Diária`;
 
     // Frame for support card informations
     let cardFrame = document.createElement('div');
